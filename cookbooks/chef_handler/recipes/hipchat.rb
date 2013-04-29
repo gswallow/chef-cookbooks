@@ -13,3 +13,4 @@ h = chef_handler "HipChat::NotifyRoom" do
   supports :exception => :true 
   action :nothing
 end
+h.run_action("enable")
