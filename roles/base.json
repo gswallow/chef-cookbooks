@@ -3,13 +3,21 @@
   "description": "Base role for all boxes",
   "json_class": "Chef::Role",
   "default_attributes": {
+    "chef_handler": {
+      "hipchat": {
+        "api_key": "7ca85246ec48ea6810bd73006fa837",
+        "room_name": "chef",
+        "notify_users": false
+      }
+    }
   },
   "override_attributes": {
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[users::sysadmins]",
-    "recipe[chef_handler]"
+    "recipe[chef_handler]",
+    "recipe[chef_handler::hipchat]",
+    "recipe[users::sysadmins]"
   ],
   "env_run_lists": {
   }

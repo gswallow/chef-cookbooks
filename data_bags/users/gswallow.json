@@ -3,6 +3,6 @@
   "shell": "/bin/bash",
   "uid": "500",
   "comment": "Greg Swallow",
-  "groups": [ "sysadmin", "admins" ],
+  "groups": [ "sysadmin", "admin" ],
   "ssh_keys": [ "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAnsICCtJT+KSEg9dKzapqMZ6xWBBAt9yIqg+a7rhu1oXkQbJvO2d4A7bgIZm+yS6EzPL3hWT8b5Pd8rpe5R2ixqjdD1zkd01jaWUjFYXS3rZvzGfAkNIhrRppSdCpUwDdtWcv0LFGrb9JZ7XIA+hu46j1ldSppkkErDTvp/ZFuPGXIXuq/Ko4+quYMsZO9/IEY1mfwgBZMZ5vn0dqE4/Z3UjswKyr2nFCPSq6pNCi/dfDqXAs6Kh1FlA2A9FsfXj0QI1tAs71AveRtig2XsFHVg6VsDt3RMP4qS5jZsoo8W6iSzaHGSGgLLmJWxjuxx0LM7Yef4YjnHjMupJJg1T6Bw== rsa-key-20130412" ]
 }
