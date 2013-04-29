@@ -1,0 +1,16 @@
+{
+  "name": "base",
+  "description": "Base role for all boxes",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[users::sysadmins]",
+    "recipe[chef_handler]"
+  ],
+  "env_run_lists": {
+  }
+}
