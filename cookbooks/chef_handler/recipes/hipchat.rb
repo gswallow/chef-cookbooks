@@ -1,8 +1,15 @@
-chef_handler "Chef::Handler::NotifyRoom" do
-#  source "chef/handlers/hipchat_chef"
-  arguments [ :api_token => node[:chef_handler][:hipchat][:api_token],
-              :room_name => node[:chef_handler][:hipchat][:room_name],
-              :notify_users => node[:chef_handler][:hipchat][:notify_users] ]
+# Make sure the gem is installed from compile time.
+p = gem_package "hipchat" do
+  action :nothing
+end
+p.run_action("install")
+
+# Likeweise, register the chef handler from compile time.
+h = chef_handler "HipChat::NotifyRoom" do
+  source "#{node['chef_handler']['handler_path']}/hipchat.rb"
+  arguments [ node[:chef_handler][:hipchat][:api_token],
+              node[:chef_handler][:hipchat][:room_name],
+              node[:chef_handler][:hipchat][:notify_users] ]
   supports :exception => :true 
-  action :enable
+  action :nothing
 end

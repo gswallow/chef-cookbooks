@@ -5,7 +5,7 @@
   "default_attributes": {
     "chef_handler": {
       "hipchat": {
-        "api_key": "7ca85246ec48ea6810bd73006fa837",
+        "api_token": "7ca85246ec48ea6810bd73006fa837",
         "room_name": "chef",
         "notify_users": false
       }
